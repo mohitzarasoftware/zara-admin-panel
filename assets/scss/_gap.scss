@@ -1,0 +1,99 @@
+// Define breakpoints (similar to Bootstrap)
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
+
+// Mixin to generate margin or padding classes for all sides
+@mixin generate-spacing-classes($property) {
+  $full-property: if($property == m, margin, padding); // Determine full property
+
+  @for $i from 1 through 100 {
+    // All Sides (m- or p-)
+    .#{$property}-#{$i} {
+      #{$full-property}: #{$i}px;
+    }
+
+    // Top (mt or pt)
+    .#{$property}t-#{$i} {
+      #{$full-property}-top: #{$i}px;
+    }
+
+    // Bottom (mb or pb)
+    .#{$property}b-#{$i} {
+      #{$full-property}-bottom: #{$i}px;
+    }
+
+    // Left (ml or pl)
+    .#{$property}l-#{$i} {
+      #{$full-property}-left: #{$i}px;
+    }
+
+    // Right (mr or pr)
+    .#{$property}r-#{$i} {
+      #{$full-property}-right: #{$i}px;
+    }
+
+    // Inline (mx or px - left & right)
+    .#{$property}x-#{$i} {
+      #{$full-property}-left: #{$i}px;
+      #{$full-property}-right: #{$i}px;
+    }
+
+    // Block (my or py - top & bottom)
+    .#{$property}y-#{$i} {
+      #{$full-property}-top: #{$i}px;
+      #{$full-property}-bottom: #{$i}px;
+    }
+
+    // Responsive versions for each side
+    @each $breakpoint, $breakpoint-value in $breakpoints {
+      @media (min-width: #{$breakpoint-value}) {
+        // All sides
+        .#{$property}-#{$i}-#{$breakpoint} {
+          #{$full-property}: #{$i + 2}px;
+        }
+
+        // Top
+        .#{$property}t-#{$i}-#{$breakpoint} {
+          #{$full-property}-top: #{$i + 2}px;
+        }
+
+        // Bottom
+        .#{$property}b-#{$i}-#{$breakpoint} {
+          #{$full-property}-bottom: #{$i + 2}px;
+        }
+
+        // Left
+        .#{$property}l-#{$i}-#{$breakpoint} {
+          #{$full-property}-left: #{$i + 2}px;
+        }
+
+        // Right
+        .#{$property}r-#{$i}-#{$breakpoint} {
+          #{$full-property}-right: #{$i + 2}px;
+        }
+
+        // Inline (left & right)
+        .#{$property}x-#{$i}-#{$breakpoint} {
+          #{$full-property}-left: #{$i + 2}px;
+          #{$full-property}-right: #{$i + 2}px;
+        }
+
+        // Block (top & bottom)
+        .#{$property}y-#{$i}-#{$breakpoint} {
+          #{$full-property}-top: #{$i + 2}px;
+          #{$full-property}-bottom: #{$i + 2}px;
+        }
+      }
+    }
+  }
+}
+
+// Generate margin (m) classes
+@include generate-spacing-classes(m);
+
+// Generate padding (p) classes
+@include generate-spacing-classes(p);

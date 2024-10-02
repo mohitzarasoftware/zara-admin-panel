@@ -1,0 +1,32 @@
+// Define breakpoints (similar to Bootstrap)
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
+
+// Mixin to generate width and height classes in pixels
+@mixin generate-size-classes-px($property, $css-property) {
+  @for $i from 1 through 500 {
+    // Width or Height class (e.g., .w-100 or .h-100)
+    .#{$property}-#{$i} {
+      #{$css-property}: #{$i}px;  // Use the correct CSS property (width or height)
+    }
+
+    // Responsive versions for width/height in pixels
+    @each $breakpoint, $breakpoint-value in $breakpoints {
+      @media (min-width: #{$breakpoint-value}) {
+        .#{$property}-#{$i}-#{$breakpoint} {
+          #{$css-property}: #{$i + 20}px;  // Adjust value for larger screens (optional)
+        }
+      }
+    }
+  }
+}
+
+// Generate width (w) classes in pixels
+@include generate-size-classes-px(w, width);
+
+// Generate height (h) classes in pixels
+@include generate-size-classes-px(h, height);

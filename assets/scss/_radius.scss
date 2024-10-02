@@ -1,0 +1,70 @@
+// Define breakpoints (similar to Bootstrap)
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
+
+// Mixin to generate border-radius classes
+@mixin generate-border-radius-classes() {
+  @for $i from 1 through 100 {
+    // All corners (rounded-)
+    .rounded-#{$i} {
+      border-radius: #{$i}px;
+    }
+
+    // Top-left corner
+    .rounded-tl-#{$i} {
+      border-top-left-radius: #{$i}px;
+    }
+
+    // Top-right corner
+    .rounded-tr-#{$i} {
+      border-top-right-radius: #{$i}px;
+    }
+
+    // Bottom-left corner
+    .rounded-bl-#{$i} {
+      border-bottom-left-radius: #{$i}px;
+    }
+
+    // Bottom-right corner
+    .rounded-br-#{$i} {
+      border-bottom-right-radius: #{$i}px;
+    }
+
+    // Responsive versions for border-radius
+    @each $breakpoint, $breakpoint-value in $breakpoints {
+      @media (min-width: #{$breakpoint-value}) {
+        // All corners
+        .rounded-#{$i}-#{$breakpoint} {
+          border-radius: #{$i + 2}px;
+        }
+
+        // Top-left corner
+        .rounded-tl-#{$i}-#{$breakpoint} {
+          border-top-left-radius: #{$i + 2}px;
+        }
+
+        // Top-right corner
+        .rounded-tr-#{$i}-#{$breakpoint} {
+          border-top-right-radius: #{$i + 2}px;
+        }
+
+        // Bottom-left corner
+        .rounded-bl-#{$i}-#{$breakpoint} {
+          border-bottom-left-radius: #{$i + 2}px;
+        }
+
+        // Bottom-right corner
+        .rounded-br-#{$i}-#{$breakpoint} {
+          border-bottom-right-radius: #{$i + 2}px;
+        }
+      }
+    }
+  }
+}
+
+// Generate border-radius classes
+@include generate-border-radius-classes();

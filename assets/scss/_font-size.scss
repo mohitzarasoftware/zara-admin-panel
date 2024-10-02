@@ -1,0 +1,28 @@
+// Define breakpoints (similar to Bootstrap)
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+);
+
+// Mixin for generating font-size classes from 1px to 100px
+@mixin generate-font-sizes() {
+  @for $i from 1 through 100 {
+    .fs-#{$i} {
+      font-size: #{$i}px;
+    }
+
+    // Media queries for responsive font sizes
+    @each $breakpoint, $breakpoint-value in $breakpoints {
+      @media (min-width: #{$breakpoint-value}) {
+        .fs-#{$i}-#{$breakpoint} {
+          font-size: #{$i }px;  // Slight increase for each breakpoint
+        }
+      }
+    }
+  }
+}
+
+// Generate the font-size classes
+@include generate-font-sizes();

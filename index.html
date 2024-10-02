@@ -8,7 +8,7 @@
     <!-- bootstrap css  -->
     <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap.min.css">
     <!-- custom css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font family  -->
@@ -161,7 +161,7 @@
                         <li class="accordion-item bg-transparent border-0">
                             <a href="" class="sidebar-link d-flex align-items-center text-decoration-none justify-content-between collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarsupport" aria-expanded="true" aria-controls="sidebarsupport">
                                 <span>
-                                    <img src="assets/img/transition-icon.svg" alt="support">
+                                    <img src="assets/img/support-icon.svg" alt="support">
                                     Support
                                 </span>
                                 <i class="fa-solid fa-chevron-down sidebar-link-down"></i>
@@ -329,20 +329,82 @@
                                     </button>
 
                                 </div>
-                                <div class="user-data">
+                                <a href="" class="user-data d-flex align-items-center gap-2 text-decoration-none">
                                     <div class="user-data-img rounded-circle overflow-hidden">
-                                        <img src="assets/img/userimg.svg" alt="">
+                                        <img src="assets/img/userimg.svg" alt="user">
                                     </div>
-
-                                </div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="dashboard-inner">
                     <div class="row">
-                        <div class="col-lg-8">
-
+                        <div class="col-lg-8 ">
+                            <div class="row gap-4">
+                                <div class="col-12">
+                                    <div class="wallet-fund-card p-15 rounded-25 position-relative overflow-hidden">
+                                        <div class="row position-relative">
+                                            <div class="col-md-6">
+                                                <div class="wallet-fund-card-heading fs-18-md fs-16 fw-semibold">
+                                                    Wallet Fund Transfer
+                                                </div>
+                                                <p class="fs-14 mt-10">Swap your fund between E-Wallet to AePS Wallet or vice verse.</p>
+                                            </div>
+                                            <div class="col-md-6 ps-0">
+                                                <div class="row mx-0 gx-2">
+                                                    <div class="col-sm-6">
+                                                        <div class="wallet-fund-inner-main">
+                                                            <div class="wallet-fund-inner-card position-relative text-center rounded-6 p-10 pb-30 bg-white">
+                                                                <div class="fs-15 fw-medium wallet-fund-inner-card-title">
+                                                                    E-Wallet
+                                                                </div>
+                                                                <div class="my-1">
+                                                                    <img src="assets/img/arrow-up.svg" alt="e-wallet" height="25" width="25">
+                                                                </div>
+                                                                <div class="fs-15 wallet-fund-inner-card-title">
+                                                                    AePS Wallet
+                                                                </div>
+                                                            </div>
+                                                            <a href="" class="wallet-fund-inner-link position-relative rounded-circle mx-auto d-flex align-items-center justify-content-center text-white text-decoration-none h-40 w-40">
+                                                                <i class="fa-solid fa-arrow-right-long"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="wallet-fund-inner-main">
+                                                            <div class="wallet-fund-inner-card position-relative text-center rounded-6 p-10 pb-30 bg-white">
+                                                                <div class="fs-15 fw-medium wallet-fund-inner-card-title">
+                                                                    AePS Wallet
+                                                                </div>
+                                                                <div class="my-1">
+                                                                    <img src="assets/img/arrow-up.svg" alt="e-wallet" height="25" width="25">
+                                                                </div>
+                                                                <div class="fs-15 wallet-fund-inner-card-title">
+                                                                    E-Wallet
+                                                                </div>
+                                                            </div>
+                                                            <a href="" class="wallet-fund-inner-link position-relative rounded-circle mx-auto d-flex align-items-center justify-content-center text-white text-decoration-none h-40 w-40">
+                                                                <i class="fa-solid fa-arrow-right-long"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="recent-transaction-card p-15 rounded-25 position-relative overflow-hidden">
+                                        <div>
+                                            <div class="recent-transaction-heading fs-18-md fs-16 fw-semibold">
+                                                Most Recent Transaction
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="profile-card position-relative overflow-hidden">
@@ -379,6 +441,25 @@
                                     <div class="user-data text-center">
                                         KYC Completed
                                     </div>
+                                </div>
+                            </div>
+                            <div class="social-media-card">
+                                <div class="fw-semibold text-white social-media-heading">
+                                    Follow Us:
+                                </div>
+                                <div class="social-media-list d-flex align-items-center">
+                                    <a href="" class="social-media-icon d-flex align-items-center justify-content-center text-decoration-none">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="" class="social-media-icon d-flex align-items-center justify-content-center text-decoration-none">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="" class="social-media-icon d-flex align-items-center justify-content-center text-decoration-none">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                    <a href="" class="social-media-icon d-flex align-items-center justify-content-center text-decoration-none">    
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>

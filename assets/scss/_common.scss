@@ -1,0 +1,26 @@
+
+$theme1:#321E43;
+$theme2:#FFAA46;
+$theme3: #AC4AFF;
+$blue:#008ECF;
+$white: #fff;
+$bg-light:#F0F0F8;
+$black: #000;
+$light-black: #2c2c2c;
+$border-color:#dee2e6;
+
+body,
+html {
+    font-family: "Inter", sans-serif !important;
+    overflow: hidden;
+}
+a,button {
+    cursor: pointer !important;
+}
+body {
+    height: 100vh;
+}
+
+p {
+    color: rgba($black , 0.7);
+}
