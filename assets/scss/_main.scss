@@ -1,0 +1,337 @@
+:root {
+    --theme1:#321E43;
+    --theme2:#FFAA46;
+    --theme3: #AC4AFF;
+    --blue:#008ECF;
+    --white: #fff;
+    --bg-light:#F0F0F8;
+    --black: #000;
+    --light-black: #2c2c2c;
+    --border-color:#dee2e6;
+}
+
+body,
+html {
+    font-family: "Inter", sans-serif !important;
+    overflow: hidden;
+}
+a,button {
+    cursor: pointer !important;
+}
+body {
+    height: 100vh;
+}
+
+
+// sidebar start 
+.sidebar {
+    background-color: var(--theme1);
+    width: 250px;
+    height: 100%;
+    padding: 15px;
+    box-shadow: 5px 0px 25px 25px #00000040;
+    & .sidebar-header {
+        padding-bottom: 12px;
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 12%;
+            height: 70px;
+            width: 55px;
+            background: url(../img/sidebar-vector-1.svg) no-repeat;
+            background-position: center;
+            background-size: contain;
+            z-index: 0;
+            animation: move 3s infinite ease-in-out;
+        }
+        @keyframes move {
+          0% {}
+          50% {
+            transform: translate(-100px, 0px) ;
+          }
+          100% {}
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 12%;
+            bottom: 30%;
+            height: 70px;
+            width: 60px;
+            background: url(../img/sidebar-vector-2.svg) no-repeat;
+            background-position: center;
+            background-size: contain;
+            z-index: 0;
+            animation: move2 3s infinite ease-in-out;
+        }
+        @keyframes move2 {
+          0% {}
+          50% {
+            transform: translate(100px, 0px) ;
+          }
+          100% {}
+        }
+    }
+    & .sidebar-logo {
+        gap: 6px;
+        font-size: 16px;
+        color: #fff;
+        & img {
+            height: 23px;
+            width: 23px;
+        }
+    }
+    & .menu-btn {
+        cursor: pointer !important;
+        & img {
+            height: 20px;
+        }
+    }
+    & .sidebar-list {
+        gap: 5px;
+    }
+    & .sidebar-footer {
+        background-color: wheat;
+        background: radial-gradient(50% 50% at 50% 50%, #CA8EEB 0%, #D8B0EE 100%);
+        padding: 30px;
+        border-radius: 20px;
+    }
+    & .sidebar-footer-list {
+        gap: 12px;
+    }
+    & .sidebar-footer-link {
+        font-size: 17px;
+        color: #000;
+        font-weight: 500;
+        gap:6px;
+        & img {
+            height: 17px;
+        }
+    }
+    & .sidebar-link {
+        padding: 10px 13px;
+        border-radius: 40px;
+        line-height: normal;
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            color: var(--theme2);
+        }
+        &.sidebar-main-link {
+            background: linear-gradient(90deg, #ED6639 0%, #FFAA46 100%);
+        }
+        & img {
+            height: 19px;
+            margin-right: 4px;
+        }
+        & i {
+            font-size: 13px;
+            transition: all 0.3s ease-in-out;
+        }
+        &:not(.collapsed) {
+            & .sidebar-link-down {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+    & .sidebar-sub-list {
+        gap:15px;
+        padding: 12px;
+    }
+    & .sidebar-sublink {
+        color:rgba(255, 255, 255, 0.5);
+        font-size: 15px;
+        transition: all 0.3s ease-in-out;
+        & i {
+            margin-right: 5px;
+            transform: rotate(-40deg);
+        }
+        &:hover {
+            color: var(--theme2);
+        }
+    }
+}
+// sidebar end 
+
+// fund sidebar start 
+.fund-sidebar {
+    width: 310px;
+    box-shadow: 5px 0px 25px 25px #0000000e;    
+    & .fund-body {
+        padding: 15px;
+    }
+    & .fund-sidebar-btn{
+        background: linear-gradient(90deg, #ED6639 0%, #FFAA46 100%);
+        color: #fff;
+        padding: 8px 20px;
+        font-size: 14px;
+        border-radius: 40px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    & .fund-sidebar-card {
+        border-radius: 6px;
+        border: 1px solid #E2DBFD;
+        padding: 7px;
+        & .fund-sidebar-card-icon {
+            background: linear-gradient(138.29deg, rgba(216, 176, 238, 0.6) 20.17%, rgba(159, 91, 194, 0.6) 84.35%);
+            height: 45px;
+            width: 45px;
+            padding: 11px;
+        }
+        & .fund-sidebar-card-title {
+            font-size: 14px;
+            color: #00000080;
+        }
+        & .fund-sidebar-card-price {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        & .fund-card-show {
+            width: 20px;
+            height: 20px;
+            cursor: pointer !important; 
+            & img {
+                transform: translateY(-50%);
+                transition: all 0.3s ease-in-out;
+            }
+            & .show-icon {
+                opacity: 0;
+                visibility: hidden;
+            }
+            &.clicked {
+                & .show-icon {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                & .hide-icon {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+    & .fund-sidebar-img {
+        &::before {
+            content: '';
+            height: 40%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background: linear-gradient(0deg, rgba(217, 217, 217, 0) 0%, #FFFFFF 100%);
+
+        }
+    }
+}
+// fund sidebar end 
+
+// navbar start 
+.dashboard-nav {
+    padding: 15px;
+    border: 1px solid #CCBFFF;
+    & .dash-nav-heading {
+        font-size: 17px;
+    }
+    & .search-main {
+        background: linear-gradient(90deg, #ED6639 0%, #FFAA46 100%);
+        height: 40px;
+        padding: 10px;
+        & input {
+            font-size: 15px;
+            color: #fff;
+            &::placeholder {
+                color: #fff;
+            }
+        }
+    }
+    & .nav-icon-list {
+        gap: 8px;
+    }
+    & .nav-btn {
+        background: #CCBFFF78;
+        height: 40px;
+        width: 40px;
+        padding: 12px;
+        border-radius: 6px;
+        transition: all 0.3s ease-in-out;
+        & img {
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+            background-color: var(--theme3);
+            & img {
+                filter: brightness(100);
+            }
+        }
+    }
+    & .nav-notification {
+        right: -7px;
+        top: -5px;
+        height: 14px;
+        width: 14px;
+        background-color: #D40000;
+        font-size: 12px;
+        color: #fff;
+        animation:shake 1.5s infinite linear;
+    }
+    @keyframes shake {
+        0%  { -webkit-transform:     translate(2px, 1px) rotate(0deg); }
+        10% { -webkit-transform:     translate(-1px, -2px) rotate(-2deg); }
+        20% { -webkit-transform:     translate(-3px, 0px) rotate(3deg); }
+        30% { -webkit-transform:     translate(0px, 2px) rotate(0deg); }
+        40% { -webkit-transform:     translate(1px, -1px) rotate(1deg); }
+        50% { -webkit-transform:     translate(-1px, 2px) rotate(-1deg); }
+        60% { -webkit-transform:     translate(-3px, 1px) rotate(0deg); }
+        70% { -webkit-transform:     translate(2px, 1px) rotate(-2deg); }
+        80% { -webkit-transform:     translate(-1px, -1px) rotate(4deg); }
+        90% { -webkit-transform:     translate(2px, 2px) rotate(0deg); }
+        100%{ -webkit-transform:     translate(1px, -2px) rotate(-1deg); }
+    }
+    & .user-data-img {
+        height: 40px;
+        width: 40px;
+        border: 1px solid #008ECF;
+    }
+}
+// navbar end 
+
+// dashboard main section start
+.dashboard-main {
+    background: linear-gradient(252.32deg, #E5EDFA 13.32%, #E2DBFD 68.15%);
+    & .dashboard-inner {
+        padding: 20px;
+    }
+}
+// dashboard main section end
+
+
+// profile card section 
+.profile-card {
+    padding: 20px;
+    background-color: var(--theme1);
+    border-radius: 15px ;
+    & .profile-card-heading {
+        color: #fff;
+        font-size: 18px;
+    }
+    & .profile-card-menu-icon {
+        color: #fff;
+        font-size: 20px;
+    }
+    & .profile-user-img {
+        height: 65px;
+        width: 65px;
+        border: 3px solid var(--blue);
+        margin-top:15px;
+    }
+    & .user-data {
+        color: #fff;
+        margin-top: 7px;
+        font-size: 15px;
+    }
+}
+// profile card end
