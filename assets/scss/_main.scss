@@ -283,8 +283,8 @@ $border-color:#dee2e6;
         }
     }
     & .user-data-img {
-        height: 42px;
-        width: 42px;
+        height: 40px;
+        width: 40px;
         border: 2.5px solid #008ECF;
     }
 }
@@ -550,3 +550,79 @@ $border-color:#dee2e6;
     }
 }
 // recent transaction card end
+
+
+// add money card start
+.add-money-card {
+    &::after {
+        content: '';
+        position: absolute;
+        left: 2%;
+        top: 10%;
+        height: 80px;
+        width: 100px;
+        background: url(../img/add-fund-icon.svg) no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    & .add-money-label {
+        border: 1px solid #D8B0EE;
+        color:#9F5BC2;
+        cursor: pointer;
+        & .add-money-label-inner {
+            border: 3.5px solid #000000;
+        }
+    }
+    & .add-money-input {
+        &:checked {
+            & ~ {
+                & .add-money-label {
+                    & .add-money-label-inner {
+                        background-color: $theme2;
+                    }
+                }
+            }
+        }
+    }
+}
+// add money card end
+
+// scan section start 
+.scan-section {
+    & .scan-header {
+        border-bottom: 1px solid #CCBFFF;
+    }
+    & .scan-label {
+        border: 1px solid  #D8B0EE;
+        color: #9F5BC2;
+        outline: none;
+        &::placeholder {
+            color: #9F5BC2;
+        }
+    }
+    .loader div {
+        width: 4px;
+        height: 4px;
+        background-color: $theme1;
+        border-radius: 50%;
+        animation: grow-shrink 1.5s infinite;
+    }
+    .loader div:nth-child(1) {
+        animation-delay: 0s;
+    }
+    .loader div:nth-child(2) {
+        animation-delay: 0.3s;
+    }
+    .loader div:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+    @keyframes grow-shrink {
+        0%, 100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(3.5);
+        }
+      }
+}
+// scan section end

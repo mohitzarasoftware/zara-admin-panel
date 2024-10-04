@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zara software</title>
+    <title>zara software - Add Money</title>
     <!-- bootstrap css  -->
     <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap.min.css">
     <!-- custom css -->
@@ -294,7 +294,7 @@
                     <div class="row align-items-center">
                         <div class="col">
                             <div class="dash-nav-heading fw-bold">
-                                Dashboard
+                                API Key
                             </div>
                         </div>
                         <div class="col-4">
@@ -329,7 +329,7 @@
                                     </button>
 
                                 </div>
-                                <a href="" class="user-data d-flex align-items-center gap-10 text-decoration-none">
+                                <a href="" class="user-data d-flex align-items-center gap-8 text-decoration-none">
                                     <div class="user-data-img rounded-circle overflow-hidden">
                                         <img src="assets/img/userimg.svg" alt="user">
                                     </div>
@@ -344,194 +344,84 @@
                         <div class="col-lg-8 ">
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="wallet-fund-card p-15 rounded-25 position-relative overflow-hidden">
-                                        <div class="row position-relative">
-                                            <div class="col-md-6">
-                                                <div class="wallet-fund-card-heading fs-18-md fs-16 fw-semibold">
-                                                    Wallet Fund Transfer
-                                                </div>
-                                                <p class="fs-14 mt-10">Swap your fund between E-Wallet to AePS Wallet or vice verse.</p>
+                                    <div class="wallet-fund-card add-money-card p-20 text-center rounded-25 position-relative overflow-hidden">
+                                        <div class="position-relative">
+                                            <div class="wallet-fund-card-heading fs-18-md fs-16 fw-semibold">
+                                                API Key
                                             </div>
-                                            <div class="col-md-6 ps-0">
-                                                <div class="row mx-0 gx-2">
-                                                    <div class="col-sm-6">
-                                                        <div class="wallet-fund-inner-main">
-                                                            <div class="wallet-fund-inner-card position-relative text-center rounded-6 p-10 pb-30 bg-white">
-                                                                <div class="fs-15 fw-medium wallet-fund-inner-card-title">
-                                                                    E-Wallet
-                                                                </div>
-                                                                <div class="my-1">
-                                                                    <img src="assets/img/arrow-up.svg" alt="e-wallet" height="25" width="25">
-                                                                </div>
-                                                                <div class="fs-15 wallet-fund-inner-card-title">
-                                                                    AePS Wallet
-                                                                </div>
-                                                            </div>
-                                                            <a href="" class="wallet-fund-inner-link position-relative rounded-circle mx-auto d-flex align-items-center justify-content-center text-white text-decoration-none h-40 w-40">
-                                                                <i class="fa-solid fa-arrow-right-long"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <div class="wallet-fund-inner-main">
-                                                            <div class="wallet-fund-inner-card position-relative text-center rounded-6 p-10 pb-30 bg-white">
-                                                                <div class="fs-15 fw-medium wallet-fund-inner-card-title">
-                                                                    AePS Wallet
-                                                                </div>
-                                                                <div class="my-1">
-                                                                    <img src="assets/img/arrow-up.svg" alt="e-wallet" height="25" width="25">
-                                                                </div>
-                                                                <div class="fs-15 wallet-fund-inner-card-title">
-                                                                    E-Wallet
-                                                                </div>
-                                                            </div>
-                                                            <a href="" class="wallet-fund-inner-link position-relative rounded-circle mx-auto d-flex align-items-center justify-content-center text-white text-decoration-none h-40 w-40">
-                                                                <i class="fa-solid fa-arrow-right-long"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
+                                            <p class="fs-14 mt-15 mb-0">API Key Management</p>
+                                            <div class="d-flex mt-20 gap-12 justify-content-center align-items-center">
+                                                <div>
+                                                    <input type="radio" name="add_fund" class="add-money-input" hidden id="addfund">
+                                                    <label for="addfund" class="add-money-label rounded-30 pl-12 pr-25 py-7 d-flex align-items-center gap-10 fs-14">
+                                                        <span class="add-money-label-inner h-17 w-17 rounded-circle d-flex"></span>
+                                                        Add Fund to E-Wallet
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" name="add_fund" class="add-money-input" hidden id="addfund2">
+                                                    <label for="addfund2" class="add-money-label rounded-30 pl-12 pr-25 py-7 d-flex align-items-center gap-10 fs-14">
+                                                        <span class="add-money-label-inner h-17 w-17 rounded-circle d-flex"></span>
+                                                        Add Fund to E-Wallet
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 mt-25">
-                                    <div class="recent-transaction-card p-15 rounded-25 position-relative overflow-hidden">
-                                        <div class="row align-items-center">
-                                            <div class="recent-transaction-heading col fs-16 fw-semibold">
-                                                Most Recent Transaction
-                                            </div>
-                                            <div class="col-6 ps-0">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <div class="recent-transaction-search-input h-35 d-flex align-items-center">
-                                                        <img src="assets/img/search-icon-color.svg" alt="search">
-                                                        <input type="text" class="form-control py-0 px-2 fs-13 border-0 shadow-none bg-transparent" placeholder="Search Transaction...">
-                                                    </div>
-                                                    <div class="recent-transaction-number-input">
-                                                        <input type="number" class="form-control fs-13 h-35 shadow-none bg-transparent p-8" value="10">
+                                <div class="col-12 mt-30">
+                                    <form action="">
+                                        <div class="scan-section">
+                                            <div class="scan-header pb-13 d-flex align-items-center justify-content-between">
+                                                <div class="fw-medium fs-15">
+                                                    Scan QR Code to add Fund to your wallet.
+                                                </div>
+                                                <div class="loader-container">
+                                                    <div class="loader d-flex gap-20">
+                                                      <div></div>
+                                                      <div></div>
+                                                      <div></div>
                                                     </div>
                                                 </div>
-                                           </div>
+                                            </div>
+                                            <div class="row mt-25">
+                                                <div class="col-md-4">
+                                                    <div class="rounded-8 bg-white p-5">
+                                                        <img src="assets/img/scanner.png" alt="scanner" class="h-100 w-100">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="row g-2">
+                                                        <div class="col-12 mb-18">
+                                                            <div>
+                                                                <span class="fs-15 text-black-50 mb-8 d-block">Upload Screenshot</span>
+                                                                <label for="upload_ss" class="scan-label d-flex align-items-center px-15 position-relative py-7 gap-20 rounded-30 fs-14">
+                                                                    <img src="assets/img/upload.svg" alt="upload" class="h-19 upload-icon">
+                                                                    <span class="d-flex align-items-center justify-content-center w-100">No file has been selected</span>
+                                                                </label>
+                                                                <input type="file" id="upload_ss" hidden>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div>
+                                                                <label for="enter_amount" class="fs-15 text-black-50 mb-7">Enter the amount</label>
+                                                                <input type="text" id="enter_amount" class="scan-label bg-transparent d-flex align-items-center px-15 position-relative w-100 py-7 gap-20 rounded-30 fs-14" placeholder="Amount Value">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div>
+                                                                <label for="transaction_id" class="fs-15 text-black-50 mb-7">Enter Transaction ID</label>
+                                                                <input type="text" id="transaction_id" class="scan-label bg-transparent d-flex align-items-center px-15 position-relative w-100 py-7 gap-20 rounded-30 fs-14" placeholder="Enter Transaction ID">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-30">
+                                                        <button class="common-btn border-0 p-8 d-flex w-100 justify-content-center align-items-center rounded-30">Add Fund</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="table-responsive bg-transparent transaction-table mt-20 mb-10">
-                                            <table class="table text-nowrap bg-transparent mb-10">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="fw-normal fs-13 bg-transparent"> # </th>
-                                                        <th class="fw-normal fs-13 bg-transparent">TXN ID</th>
-                                                        <th class="fw-normal fs-13 bg-transparent">FROM WALLET</th>
-                                                        <th class="fw-normal fs-13 bg-transparent"> TO WALLET</th>
-                                                        <th class="fw-normal fs-13 bg-transparent">AMOUNT</th>
-                                                        <th class="fw-normal fs-13 bg-transparent">STATUS</th>
-                                                        <th class="fw-normal fs-13 bg-transparent">CREATED AT</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 1</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">890788789</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">E-Wallet </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">AePS  </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">1,500.00</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7 payment-success">Success </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 27/09/2024 14:22</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 2</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">890788789</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">E-Wallet </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">AePS  </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">1,500.00</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7 payment-success">Success     </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 27/09/2024 14:22</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 3</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">890788789</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">E-Wallet </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">AePS  </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">1,500.00</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7 payment-failed">Success     </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 27/09/2024 14:22</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 4</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">890788789</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">E-Wallet </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">AePS  </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">1,500.00</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7 payment-success">Success     </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 27/09/2024 14:22</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 5</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">890788789</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">E-Wallet </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">AePS  </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">1,500.00</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7 payment-success">Success     </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 27/09/2024 14:22</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 6</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">890788789</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">E-Wallet </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">AePS  </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">1,500.00</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7 payment-success">Success     </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 27/09/2024 14:22</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 7</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">890788789</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">E-Wallet </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">AePS  </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">1,500.00</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7 payment-success">Success     </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 27/09/2024 14:22</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 8</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">890788789</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">E-Wallet </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">AePS  </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">1,500.00</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7 payment-success">Success     </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 27/09/2024 14:22</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 9</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">890788789</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">E-Wallet </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">AePS  </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">1,500.00</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7 payment-success">Success     </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 27/09/2024 14:22</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 10</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">890788789</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">E-Wallet </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">AePS  </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7">1,500.00</td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7 payment-success">Success     </td>
-                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 27/09/2024 14:22</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <nav aria-label="Page navigation example " class="d-flex align-items-center mt-20">
-                                            <ul class="pagination mb-0 bg-transparent align-items-center p-4 rounded-30">
-                                              <li class="page-item position-relative border-0 bg-transparent disabled"><a class="page-link h-28 d-flex align-items-center justify-content-center shadow-none py-0 position-relative bg-transparent border-0 fs-14 gap-6" href="#"><i class="fa-solid fa-chevron-left fs-11 mt-2"></i>Previous</a></li>
-                                              <li class="page-item position-relative border-0 bg-transparent active" aria-current="page"><a class="page-link h-28 d-flex align-items-center justify-content-center shadow-none py-0 position-relative bg-transparent border-0 fs-14" href="#">1</a></li>
-                                              <li class="page-item position-relative border-0 bg-transparent"><a class="page-link h-28 d-flex align-items-center justify-content-center shadow-none py-0 position-relative bg-transparent border-0 fs-14" href="#">2</a></li>
-                                              <li class="page-item position-relative border-0 bg-transparent"><a class="page-link h-28 d-flex align-items-center justify-content-center shadow-none py-0 position-relative bg-transparent border-0 fs-14" href="#">3</a></li>
-                                              <li class="page-item position-relative border-0 bg-transparent"><a class="page-link h-28 d-flex align-items-center justify-content-center shadow-none py-0 position-relative bg-transparent border-0 fs-14" href="#">4</a></li>
-                                              <li class="page-item position-relative border-0 bg-transparent"><a class="page-link h-28 d-flex align-items-center justify-content-center shadow-none py-0 position-relative bg-transparent border-0 fs-14" href="#">5</a></li>
-                                              <li class="page-item position-relative border-0 bg-transparent"><a class="page-link h-28 d-flex align-items-center justify-content-center shadow-none py-0 position-relative bg-transparent border-0 fs-14 gap-6" href="#">Next<i class="fa-solid fa-chevron-right fs-11 mt-2"></i></a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -597,7 +487,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- js files -->
     <script src="assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
