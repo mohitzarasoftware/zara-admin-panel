@@ -13,39 +13,39 @@ $breakpoints: (
   @for $i from 1 through 100 {
     // All Sides (m- or p-)
     .#{$property}-#{$i} {
-      #{$full-property}: #{$i}px;
+      #{$full-property}: #{$i}px !important;
     }
 
     // Top (mt or pt)
     .#{$property}t-#{$i} {
-      #{$full-property}-top: #{$i}px;
+      #{$full-property}-top: #{$i}px !important;
     }
 
     // Bottom (mb or pb)
     .#{$property}b-#{$i} {
-      #{$full-property}-bottom: #{$i}px;
+      #{$full-property}-bottom: #{$i}px !important;
     }
 
     // Left (ml or pl)
     .#{$property}l-#{$i} {
-      #{$full-property}-left: #{$i}px;
+      #{$full-property}-left: #{$i}px !important;
     }
 
     // Right (mr or pr)
     .#{$property}r-#{$i} {
-      #{$full-property}-right: #{$i}px;
+      #{$full-property}-right: #{$i}px !important;
     }
 
     // Inline (mx or px - left & right)
     .#{$property}x-#{$i} {
-      #{$full-property}-left: #{$i}px;
-      #{$full-property}-right: #{$i}px;
+      #{$full-property}-left: #{$i}px !important;
+      #{$full-property}-right: #{$i}px !important;
     }
 
     // Block (my or py - top & bottom)
     .#{$property}y-#{$i} {
-      #{$full-property}-top: #{$i}px;
-      #{$full-property}-bottom: #{$i}px;
+      #{$full-property}-top: #{$i}px !important;
+      #{$full-property}-bottom: #{$i}px !important;
     }
 
     // Responsive versions for each side
@@ -53,39 +53,39 @@ $breakpoints: (
       @media (min-width: #{$breakpoint-value}) {
         // All sides
         .#{$property}-#{$i}-#{$breakpoint} {
-          #{$full-property}: #{$i + 2}px;
+          #{$full-property}: #{$i + 2}px !important;
         }
 
         // Top
         .#{$property}t-#{$i}-#{$breakpoint} {
-          #{$full-property}-top: #{$i + 2}px;
+          #{$full-property}-top: #{$i + 2}px !important;
         }
 
         // Bottom
         .#{$property}b-#{$i}-#{$breakpoint} {
-          #{$full-property}-bottom: #{$i + 2}px;
+          #{$full-property}-bottom: #{$i + 2}px !important;
         }
 
         // Left
         .#{$property}l-#{$i}-#{$breakpoint} {
-          #{$full-property}-left: #{$i + 2}px;
+          #{$full-property}-left: #{$i + 2}px !important;
         }
 
         // Right
         .#{$property}r-#{$i}-#{$breakpoint} {
-          #{$full-property}-right: #{$i + 2}px;
+          #{$full-property}-right: #{$i + 2}px !important;
         }
 
         // Inline (left & right)
         .#{$property}x-#{$i}-#{$breakpoint} {
-          #{$full-property}-left: #{$i + 2}px;
-          #{$full-property}-right: #{$i + 2}px;
+          #{$full-property}-left: #{$i + 2}px !important;
+          #{$full-property}-right: #{$i + 2}px !important;
         }
 
         // Block (top & bottom)
         .#{$property}y-#{$i}-#{$breakpoint} {
-          #{$full-property}-top: #{$i + 2}px;
-          #{$full-property}-bottom: #{$i + 2}px;
+          #{$full-property}-top: #{$i + 2}px !important;
+          #{$full-property}-bottom: #{$i + 2}px !important;
         }
       }
     }
