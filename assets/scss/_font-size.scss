@@ -9,15 +9,16 @@ $breakpoints: (
 // Mixin for generating font-size classes from 1px to 100px
 @mixin generate-font-sizes() {
   @for $i from 1 through 100 {
+    // Default font-size class
     .fs-#{$i} {
       font-size: #{$i}px;
     }
 
-    // Media queries for responsive font sizes
+    // Media queries for responsive font sizes (inverted class name order)
     @each $breakpoint, $breakpoint-value in $breakpoints {
       @media (min-width: #{$breakpoint-value}) {
-        .fs-#{$i}-#{$breakpoint} {
-          font-size: #{$i }px;  // Slight increase for each breakpoint
+        .fs-#{$breakpoint}-#{$i} { // Changed to match your expected usage
+          font-size: #{$i}px;
         }
       }
     }

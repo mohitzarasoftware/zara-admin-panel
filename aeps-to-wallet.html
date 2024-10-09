@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zara software - Add Money</title>
+    <title>zara software - AePS To Wallet</title>
     <!-- bootstrap css  -->
     <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap.min.css">
     <!-- custom css -->
@@ -275,7 +275,7 @@
                     <div class="row align-items-center">
                         <div class="col">
                             <div class="dash-nav-heading fw-bold">
-                                API Key
+                                AePS To Wallet
                             </div>
                         </div>
                         <div class="col-4">
@@ -325,130 +325,50 @@
                         <div class="col-lg-8 ">
                             <div class="row h-100 flex-column">
                                 <div class="col-12">
-                                    <div class="wallet-fund-card api-key-card p-20 text-center rounded-25 position-relative overflow-hidden">
+                                    <div class="wallet-fund-card api-key-card active-services-card p-20 pb-30 text-center rounded-25 position-relative overflow-hidden">
                                         <div class="position-relative">
                                             <div class="wallet-fund-card-heading fs-18-md fs-16 fw-semibold">
-                                                API Key
+                                                AePS To Wallet
                                             </div>
-                                            <p class="fs-14 mt-15 mb-0">API Key Management</p>
-                                            <div class="mt-25 d-flex align-items-center justify-content-center ">
-                                                <a href="" class="common-btn py-7 px-22 text-decoration-none fs-15 d-flex align-items-center gap-12 rounded-30">
-                                                    <span class="d-flex align-items-center justify-content-center h-21 w-21">
-                                                        <img src="assets/img/generate-token.svg" alt="generate-token" class="h-full w-full img-fluid">
-                                                    </span>
-                                                    Generate Token 
-                                                </a>
-                                            </div>
+                                            <p class="fs-14 mt-15 mb-0">Transfer Amount between your
+                                                <br>
+                                                wallet
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 mt-25 flex-fill">
-                                    <div class="recent-transaction-card h-100 d-flex flex-column justify-content-between api-generated-card p-15 rounded-25 position-relative overflow-hidden">
-                                        <div>
-                                            <div class="row align-items-center">
-                                                <div class="recent-transaction-heading col fs-16 fw-semibold">
-                                                    Your All Generated API
-                                                </div>
-                                                <div class="col-6 ps-0">
-                                                    <div class="d-flex align-items-center gap-10">
-                                                        <div class="recent-transaction-search-input h-35 d-flex align-items-center">
-                                                            <img src="assets/img/search-icon-color.svg" alt="search">
-                                                            <input type="text" class="form-control py-0 px-2 fs-13 border-0 shadow-none bg-transparent" placeholder="Search API...">
+                                <div class="col-12 mt-30  flex-fill">
+                                    <div class="aeps-to-wallet-card rounded-20 overflow-hidden h-100">
+                                        <div class="d-flex align-items-center h-100 position-relative z-1">
+                                            <form action="">
+                                                <div class="row">
+                                                    <div class="col-lg-10 mx-auto">
+                                                        <div class="aeps-to-wallet-card-title fs-14 text-nowrap text-truncate lg-32 position-relative pb-8">
+                                                            You are going to transfer your AePS Wallet Amount to the E-Wallet.  
                                                         </div>
-                                                        <div class="recent-transaction-number-input">
-                                                            <input type="number" class="form-control fs-13 h-35 shadow-none bg-transparent p-8" value="10">
+                                                        <div class="row mt-40">
+                                                            <div class="col-md-6 gx-2">
+                                                                <div class="aeps-to-wallet-input-group">
+                                                                    <label for="aeps-wallet-amount" class="fw-medium fs-14 pb-8 ps-1">AePS Wallet Amount</label>
+                                                                    <input type="text" id="aeps-wallet-amount" placeholder="Enter Amount" class="h-40 p-10 w-100 rounded-30 fs-14 text-black">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="aeps-to-wallet-input-group">
+                                                                    <label for="aeps-amount" class="fw-medium fs-14 pb-8 ps-1">Amount</label>
+                                                                    <input type="text" id="aeps-amount" placeholder="Enter Amount" class="h-40 p-10 w-100 rounded-30 fs-14 text-black">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-40 d-flex">
+                                                            <button class="common-btn p-9 border-0 w-100 text-white rounded-30">
+                                                                Transfer Fund
+                                                            </button>
                                                         </div>
                                                     </div>
-                                               </div>
-                                            </div>
-                                            <div class="table-responsive bg-transparent transaction-table api-table mt-20 mb-10">
-                                                <table class="table text-nowrap bg-transparent mb-5 align-middle">
-                                                    <thead>
-                                                        <tr>
-                                                            <th class="fw-normal fs-13 bg-transparent px-10"> # </th>
-                                                            <th class="fw-normal fs-13 bg-transparent px-10">Client ID   </th>
-                                                            <th class="fw-normal fs-13 bg-transparent px-10">Client Secret</th>
-                                                            <th class="fw-normal fs-13 bg-transparent px-10"> Created At </th>
-                                                            <th class="fw-normal fs-13 bg-transparent px-10">Status</th>
-                                                            <th class="fw-normal fs-13 bg-transparent px-10"> Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7"> 1</td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7">
-                                                                <span class="gap-2 d-inline-flex align-items-center api-client-data">
-                                                                    <span class="client-data-copy text-truncate d-block w-80">
-                                                                        ea7uAiBn9wlea7uAiBn9wl
-                                                                    </span>
-                                                                    <button class="api-copy-btn fs-14 border-0 p-0 bg-transparent">
-                                                                        <i class="fa-regular fa-copy"></i>
-                                                                    </button>
-                                                                </span>
-                                                            </td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7">
-                                                                <span class="gap-2 d-inline-flex align-items-center api-client-data">
-                                                                    <span class="client-data-copy text-truncate d-block w-80">
-                                                                        ea7uAiBn9wlea7uAiBn9wl
-                                                                    </span>
-                                                                    <button class="api-copy-btn fs-14 border-0 p-0 bg-transparent">
-                                                                        <i class="fa-regular fa-copy"></i>
-                                                                    </button>
-                                                                </span>
-                                                             </td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7">Sep 26, 2024 15:24:17  </td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7 payment-success">Active </td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7 text-center"> 
-                                                                <button class="api-delete-btn p-0 border-0 bg-transparent text-danger">
-                                                                    <i class="fa-solid fa-trash-can"></i>
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7"> 1</td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7">
-                                                                <span class="gap-2 d-inline-flex align-items-center api-client-data">
-                                                                    <span class="client-data-copy text-truncate d-block w-80">
-                                                                        ea7uAiBn9wlea7uAiBn9wl
-                                                                    </span>
-                                                                    <button class="api-copy-btn fs-14 border-0 p-0 bg-transparent">
-                                                                        <i class="fa-regular fa-copy"></i>
-                                                                    </button>
-                                                                </span>
-                                                            </td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7">
-                                                                <span class="gap-2 d-inline-flex align-items-center api-client-data">
-                                                                    <span class="client-data-copy text-truncate d-block w-80">
-                                                                        ea7uAiBn9wlea7uAiBn9wl
-                                                                    </span>
-                                                                    <button class="api-copy-btn fs-14 border-0 p-0 bg-transparent">
-                                                                        <i class="fa-regular fa-copy"></i>
-                                                                    </button>
-                                                                </span>
-                                                             </td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7">Sep 26, 2024 15:24:17  </td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7 payment-success">Active </td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7 text-center"> 
-                                                                <button class="api-delete-btn p-0 border-0 bg-transparent text-danger">
-                                                                    <i class="fa-solid fa-trash-can"></i>
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                                </div>
+                                            </form>
                                         </div>
-                                        <nav aria-label="Page navigation example " class="d-flex align-items-center mt-20">
-                                            <ul class="pagination mb-0 bg-transparent align-items-center p-4 rounded-30">
-                                              <li class="page-item position-relative border-0 bg-transparent disabled"><a class="page-link h-28 d-flex align-items-center justify-content-center shadow-none py-0 position-relative bg-transparent border-0 fs-14 gap-6" href="#"><i class="fa-solid fa-chevron-left fs-11 mt-2"></i>Previous</a></li>
-                                              <li class="page-item position-relative border-0 bg-transparent active" aria-current="page"><a class="page-link h-28 d-flex align-items-center justify-content-center shadow-none py-0 position-relative bg-transparent border-0 fs-14" href="#">1</a></li>
-                                              <li class="page-item position-relative border-0 bg-transparent"><a class="page-link h-28 d-flex align-items-center justify-content-center shadow-none py-0 position-relative bg-transparent border-0 fs-14" href="#">2</a></li>
-                                              <li class="page-item position-relative border-0 bg-transparent"><a class="page-link h-28 d-flex align-items-center justify-content-center shadow-none py-0 position-relative bg-transparent border-0 fs-14" href="#">3</a></li>
-                                              <li class="page-item position-relative border-0 bg-transparent"><a class="page-link h-28 d-flex align-items-center justify-content-center shadow-none py-0 position-relative bg-transparent border-0 fs-14" href="#">4</a></li>
-                                              <li class="page-item position-relative border-0 bg-transparent"><a class="page-link h-28 d-flex align-items-center justify-content-center shadow-none py-0 position-relative bg-transparent border-0 fs-14" href="#">5</a></li>
-                                              <li class="page-item position-relative border-0 bg-transparent"><a class="page-link h-28 d-flex align-items-center justify-content-center shadow-none py-0 position-relative bg-transparent border-0 fs-14 gap-6" href="#">Next<i class="fa-solid fa-chevron-right fs-11 mt-2"></i></a></li>
-                                            </ul>
-                                        </nav>
                                     </div>
                                 </div>
                             </div>

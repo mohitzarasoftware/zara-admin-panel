@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zara software - Add Money</title>
+    <title>zara software - Commission Plan</title>
     <!-- bootstrap css  -->
     <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap.min.css">
     <!-- custom css -->
@@ -275,7 +275,7 @@
                     <div class="row align-items-center">
                         <div class="col">
                             <div class="dash-nav-heading fw-bold">
-                                API Key
+                                AePS Transaction
                             </div>
                         </div>
                         <div class="col-4">
@@ -325,118 +325,94 @@
                         <div class="col-lg-8 ">
                             <div class="row h-100 flex-column">
                                 <div class="col-12">
-                                    <div class="wallet-fund-card api-key-card p-20 text-center rounded-25 position-relative overflow-hidden">
+                                    <div class="wallet-fund-card api-key-card active-services-card p-20 pb-30 text-center rounded-25 position-relative overflow-hidden">
                                         <div class="position-relative">
                                             <div class="wallet-fund-card-heading fs-18-md fs-16 fw-semibold">
-                                                API Key
+                                                AePS Transaction
                                             </div>
-                                            <p class="fs-14 mt-15 mb-0">API Key Management</p>
-                                            <div class="mt-25 d-flex align-items-center justify-content-center ">
-                                                <a href="" class="common-btn py-7 px-22 text-decoration-none fs-15 d-flex align-items-center gap-12 rounded-30">
-                                                    <span class="d-flex align-items-center justify-content-center h-21 w-21">
-                                                        <img src="assets/img/generate-token.svg" alt="generate-token" class="h-full w-full img-fluid">
-                                                    </span>
-                                                    Generate Token 
-                                                </a>
-                                            </div>
+                                            <p class="fs-14 mt-15 mb-0">Check your all AePS recent <br> transaction here.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 mt-25 flex-fill">
-                                    <div class="recent-transaction-card h-100 d-flex flex-column justify-content-between api-generated-card p-15 rounded-25 position-relative overflow-hidden">
-                                        <div>
-                                            <div class="row align-items-center">
-                                                <div class="recent-transaction-heading col fs-16 fw-semibold">
-                                                    Your All Generated API
-                                                </div>
-                                                <div class="col-6 ps-0">
-                                                    <div class="d-flex align-items-center gap-10">
-                                                        <div class="recent-transaction-search-input h-35 d-flex align-items-center">
-                                                            <img src="assets/img/search-icon-color.svg" alt="search">
-                                                            <input type="text" class="form-control py-0 px-2 fs-13 border-0 shadow-none bg-transparent" placeholder="Search API...">
-                                                        </div>
-                                                        <div class="recent-transaction-number-input">
-                                                            <input type="number" class="form-control fs-13 h-35 shadow-none bg-transparent p-8" value="10">
-                                                        </div>
+                                <div class="col-12 mt-25">
+                                    <div class="recent-transaction-card p-15 rounded-25 position-relative overflow-hidden">
+                                        <div class="row align-items-center">
+                                            <div class="col">
+                                                
+                                            </div>
+                                            <div class="col-6 ps-0">
+                                                <div class="d-flex align-items-center gap-10">
+                                                    <div class="recent-transaction-search-input h-35 d-flex align-items-center">
+                                                        <img src="assets/img/search-icon-color.svg" alt="search">
+                                                        <input type="text" class="form-control py-0 px-2 fs-13 border-0 shadow-none bg-transparent" placeholder="Search Transaction...">
                                                     </div>
-                                               </div>
-                                            </div>
-                                            <div class="table-responsive bg-transparent transaction-table api-table mt-20 mb-10">
-                                                <table class="table text-nowrap bg-transparent mb-5 align-middle">
-                                                    <thead>
-                                                        <tr>
-                                                            <th class="fw-normal fs-13 bg-transparent px-10"> # </th>
-                                                            <th class="fw-normal fs-13 bg-transparent px-10">Client ID   </th>
-                                                            <th class="fw-normal fs-13 bg-transparent px-10">Client Secret</th>
-                                                            <th class="fw-normal fs-13 bg-transparent px-10"> Created At </th>
-                                                            <th class="fw-normal fs-13 bg-transparent px-10">Status</th>
-                                                            <th class="fw-normal fs-13 bg-transparent px-10"> Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7"> 1</td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7">
-                                                                <span class="gap-2 d-inline-flex align-items-center api-client-data">
-                                                                    <span class="client-data-copy text-truncate d-block w-80">
-                                                                        ea7uAiBn9wlea7uAiBn9wl
-                                                                    </span>
-                                                                    <button class="api-copy-btn fs-14 border-0 p-0 bg-transparent">
-                                                                        <i class="fa-regular fa-copy"></i>
-                                                                    </button>
-                                                                </span>
-                                                            </td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7">
-                                                                <span class="gap-2 d-inline-flex align-items-center api-client-data">
-                                                                    <span class="client-data-copy text-truncate d-block w-80">
-                                                                        ea7uAiBn9wlea7uAiBn9wl
-                                                                    </span>
-                                                                    <button class="api-copy-btn fs-14 border-0 p-0 bg-transparent">
-                                                                        <i class="fa-regular fa-copy"></i>
-                                                                    </button>
-                                                                </span>
-                                                             </td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7">Sep 26, 2024 15:24:17  </td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7 payment-success">Active </td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7 text-center"> 
-                                                                <button class="api-delete-btn p-0 border-0 bg-transparent text-danger">
-                                                                    <i class="fa-solid fa-trash-can"></i>
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7"> 1</td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7">
-                                                                <span class="gap-2 d-inline-flex align-items-center api-client-data">
-                                                                    <span class="client-data-copy text-truncate d-block w-80">
-                                                                        ea7uAiBn9wlea7uAiBn9wl
-                                                                    </span>
-                                                                    <button class="api-copy-btn fs-14 border-0 p-0 bg-transparent">
-                                                                        <i class="fa-regular fa-copy"></i>
-                                                                    </button>
-                                                                </span>
-                                                            </td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7">
-                                                                <span class="gap-2 d-inline-flex align-items-center api-client-data">
-                                                                    <span class="client-data-copy text-truncate d-block w-80">
-                                                                        ea7uAiBn9wlea7uAiBn9wl
-                                                                    </span>
-                                                                    <button class="api-copy-btn fs-14 border-0 p-0 bg-transparent">
-                                                                        <i class="fa-regular fa-copy"></i>
-                                                                    </button>
-                                                                </span>
-                                                             </td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7">Sep 26, 2024 15:24:17  </td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7 payment-success">Active </td>
-                                                            <td class="fw-normal fs-13 bg-transparent px-10 py-7 text-center"> 
-                                                                <button class="api-delete-btn p-0 border-0 bg-transparent text-danger">
-                                                                    <i class="fa-solid fa-trash-can"></i>
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                                    <div class="recent-transaction-number-input">
+                                                        <input type="number" class="form-control fs-13 h-35 shadow-none bg-transparent p-8" value="10">
+                                                    </div>
+                                                </div>
+                                           </div>
+                                        </div>
+                                        <div class="table-responsive bg-transparent transaction-table mt-20 mb-10">
+                                            <table class="table text-nowrap bg-transparent mb-10">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="fw-normal fs-13 bg-transparent"> # </th>
+                                                        <th class="fw-normal fs-13 bg-transparent">TXN ID</th>
+                                                        <th class="fw-normal fs-13 bg-transparent">  MOBILE</th>
+                                                        <th class="fw-normal fs-13 bg-transparent">  TYPE</th>
+                                                        <th class="fw-normal fs-13 bg-transparent">AMOUNT</th>
+                                                        <th class="fw-normal fs-13 bg-transparent">STATUS</th>
+                                                        <th class="fw-normal fs-13 bg-transparent">CREATED AT</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 1</td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7">890788789</td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 9874563210   </td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7">AePS  </td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7">1,500.00</td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7 payment-success">Success </td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 27/09/2024 14:22</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 1</td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7">890788789</td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 9874563210   </td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7">AePS  </td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7">1,500.00</td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7 payment-success">Success </td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 27/09/2024 14:22</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 1</td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7">890788789</td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 9874563210   </td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7">AePS  </td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7">1,500.00</td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7 payment-success">Success </td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 27/09/2024 14:22</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 1</td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7">890788789</td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 9874563210   </td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7">AePS  </td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7">1,500.00</td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7 payment-success">Success </td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 27/09/2024 14:22</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 1</td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7">890788789</td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 9874563210   </td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7">AePS  </td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7">1,500.00</td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7 payment-success">Success </td>
+                                                        <td class="fw-normal fs-13 bg-transparent py-7"> 27/09/2024 14:22</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                         <nav aria-label="Page navigation example " class="d-flex align-items-center mt-20">
                                             <ul class="pagination mb-0 bg-transparent align-items-center p-4 rounded-30">
