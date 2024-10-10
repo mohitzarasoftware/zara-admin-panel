@@ -322,11 +322,11 @@
                 </div>
                 <div class="dashboard-inner flex-fill h-100 overflow-hidden p-15 position-relative">
                     <div class="row h-100 overflow-hidden position-relative z-1">
-                        <div class="col-lg-8 ">
+                        <div class="col-lg-8 h-100 ">
                             <div class="row h-100 pb-10">
-                                <div class="col-12">
-                                    <div class="chat-card rounded-20 p-20 h-100 d-flex flex-column">
-                                        <div class="chat-card-header pb-25 d-flex align-items-center justify-content-between">
+                                <div class="col-12 h-100">
+                                    <div class="chat-card rounded-20 h-100 d-flex flex-column overflow-hidden">
+                                        <div class="chat-card-header p-20 d-flex align-items-center justify-content-between">
                                             <div class="d-flex align-items-center gap-25">
                                                 <a href="" class="back-btn text-dark fs-13">
                                                     <i class="fa-solid fa-angle-left"></i>
@@ -343,8 +343,8 @@
                                             </div>
                                             <button class="chat-header-menu-btn bg-transparent p-0 border-0"><i class="fa-solid fa-ellipsis-vertical"></i></button>
                                         </div>
-                                        <div class="chat-card-body py-15 overflow-hidden d-flex flex-column gap-12 justify-content-end flex-fill">
-                                            <div class="h-100 overflow-y-auto">
+                                        <div class="chat-card-body overflow-hidden d-flex flex-column gap-12 justify-content-end flex-fill">
+                                            <div class="h-100 overflow-y-auto p-15 ">
                                                 <div class="user-chat chat">
                                                     <div class="date light-black fs-14 fw-medium ">
                                                         13:10
@@ -366,7 +366,7 @@
                                                     <div class="chat-text">
                                                         I have uploaded my all documents correctly.
                                                     </div>
-    
+                                                    <img src="assets/img/live-chat-user.png" alt="chat" class="chat-img">
                                                 </div>
                                                 <div class="user-chat chat">
                                                     <div class="date light-black fs-14 fw-medium ">
@@ -388,19 +388,45 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="chat-card-footer p-15 rounded-15 bg-white">
-                                            <div>
-                                                <input type="text" class="chat-footer-input fs-14" placeholder="Write your message here...">
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between mt-20">
-                                                <div class="d-flex align-items-center gap-9">
-                                                    <button class="chat-footer-btn border-0 d-flex align-items-center justify-content-center rounded-1 fs-15 h-28 w-28"><i class="fa-solid fa-face-smile"></i></button>
-                                                    <button class="chat-footer-btn border-0 d-flex align-items-center justify-content-center rounded-1 fs-15 h-28 w-28"><i class="fa-solid fa-paperclip"></i></button>
+                                        <div class="p-15">
+                                            <div class="position-relative">
+                                                <div class="chat-upload-card position-absolute w-100 overflow-hidden" id="toggle-div">
+                                                    <label for="chat-file" class="chat-upload-card-inner h-100 w-100 rounded-12 p-12 bg-white d-block">
+                                                        <button id="close-btn" class="position-absolute chat-upload-card-remove-btn z-2 border-0 fs-15"><i class="fa-solid fa-xmark"></i></button>
+                                                        <div class="row position-relative align-items-center">
+                                                            <div class="col">
+                                                                <div class="text-center">
+                                                                    <div class="chat-upload-card-title fs-14 text-center">
+                                                                        Drag And Drop Your file here 
+                                                                        <span class="d-block my-8">Or</span>
+                                                                        Select Your file
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="chat-file-upload rounded-1 d-flex align-items-center justify-content-center fs-55 h-140 w-140">
+                                                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                    <input type="file" hidden id="chat-file">
                                                 </div>
-                                                <div>
-                                                    <button class="chat-send-btn px-13 d-flex align-items-center justify-content-center gap-6 py-6 rounded-1 fs-14">
-                                                        Send<i class="fa-regular fa-paper-plane fs-12"></i>
-                                                    </button>
+                                                <div class="chat-card-footer p-12 rounded-15 bg-white">
+                                                    <div>
+                                                        <input type="text" class="chat-footer-input fs-14" placeholder="Write your message here...">
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between mt-20">
+                                                        <div class="d-flex align-items-center gap-9">
+                                                            <button class="chat-footer-btn border-0 d-flex align-items-center justify-content-center rounded-1 fs-15 h-28 w-28"><i class="fa-solid fa-face-smile"></i></button>
+                                                            <button class="chat-footer-btn border-0 d-flex align-items-center justify-content-center rounded-1 fs-15 h-28 w-28" id="upload-btn"><i class="fa-solid fa-paperclip"></i></button>
+                                                        </div>
+                                                        <div>
+                                                            <button class="chat-send-btn px-13 d-flex align-items-center justify-content-center gap-6 py-6 rounded-1 fs-14">
+                                                                Send<i class="fa-regular fa-paper-plane fs-12"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

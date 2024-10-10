@@ -29,3 +29,31 @@ function togglePrice(cardNumber) {
         button.classList.add('clicked');
     }
 }
+
+
+// chat upload section js 
+// script.js
+// script.js
+const toggleButton = document.getElementById('upload-btn');
+const toggleDiv = document.getElementById('toggle-div');
+const closeButton = document.getElementById('close-btn');
+
+// Toggle class on button and div
+toggleButton.addEventListener('click', () => {
+    toggleDiv.classList.toggle('show');
+    toggleButton.classList.toggle('active-btn'); // Add/remove active class on button
+});
+
+// Close the div and remove button's class when close button is clicked
+closeButton.addEventListener('click', () => {
+    toggleDiv.classList.remove('show');
+    toggleButton.classList.remove('active-btn'); // Remove active class from button
+});
+
+// Close the div and remove button's class when clicked outside
+document.addEventListener('click', (event) => {
+    if (!toggleDiv.contains(event.target) && event.target !== toggleButton) {
+        toggleDiv.classList.remove('show');
+        toggleButton.classList.remove('active-btn'); // Remove active class from button
+    }
+});

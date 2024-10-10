@@ -891,6 +891,10 @@ $border-color:#dee2e6;
             background-color: $theme3;
             color: $white;
         }
+        &.active-btn {
+            background-color: $theme3;
+            color: $white;
+        }
     }
     & .chat-send-btn {
         background-color: $theme1;
@@ -981,6 +985,37 @@ $border-color:#dee2e6;
             30% {
                 transform: translateY(-15px);
             }
+        }
+    }
+    & .chat-img {
+        border-radius: 8px;
+        border: 5px solid rgba(216, 176, 238, 1);
+        width: 50%;
+        margin-left: auto;
+        margin-top: 10px;
+    }
+    & .chat-upload-card {
+        bottom: 105%;
+        height: 0;
+        transition: all 0.3s ease-in-out;
+        & .chat-upload-card-inner {
+            border: 1px solid rgba(216, 176, 238, 1);
+        }
+        &.show {
+            height: 165px;
+        }
+        & .chat-upload-card-title {
+            color: rgba(159, 91, 194, 1);
+        }
+        & .chat-file-upload {
+            border: 1px dashed rgba(172, 74, 255, 1);
+            background: rgba(204, 191, 255, 0.47);
+            color: rgba(0,0,0, 0.3);
+        }
+        & .chat-upload-card-remove-btn {
+            background: #CCBFFF78;
+            color: $theme3;
+            border-radius: 3px ;
         }
     }
 }
